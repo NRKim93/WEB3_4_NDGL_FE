@@ -17,7 +17,7 @@ export const signup = async (payload: SignUpPayload) => {
 
 export const hasLogin = async () => {
   return await axiosInstance.get<
-    APIResponse<{ data: { isLoggedIn: true } }>
+    APIResponse<{ data: { isLoggedIn: boolean  } }>
   >("/auth/status");
 };
 
